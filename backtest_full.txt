@@ -1,0 +1,36 @@
+============================================================
+BACKTEST: Indian Equity Strategies (150 Trading Days)
+============================================================
+[SWING] Momentum Reversal
+  Total Signals: 2141
+  5-Day: Avg=-0.03%  Win=42.0%  Best=+5.00%  Worst=-2.50%  N=2124
+  10-Day: Avg=+0.04%  Win=40.1%  Best=+5.00%  Worst=-2.50%  N=2118
+  Top 5 (10d):
+    GICRE  Entry:Rs366.3  Ret:+5.00%
+    JSWENERGY  Entry:Rs488.0  Ret:+5.00%
+    GODREJPROP  Entry:Rs2056.5  Ret:+5.00%
+    BSE  Entry:Rs2217.9  Ret:+5.00%
+    SOLARINDS  Entry:Rs13504.0  Ret:+5.00%
+
+[SHORT] Bull Continuation
+  Total Signals: 4890
+  10-Day: Avg=-0.15%  Win=42.4%  Best=+12.00%  Worst=-4.00%  N=4762
+  20-Day: Avg=-0.47%  Win=33.4%  Best=+12.00%  Worst=-4.00%  N=4661
+  Top 5 (20d):
+    IDEA  Entry:Rs8.52  Ret:+12.00%
+    BANKINDIA  Entry:Rs123.41  Ret:+12.00%
+    SOLARINDS  Entry:Rs13504.0  Ret:+12.00%
+    AUBANK  Entry:Rs731.4  Ret:+12.00%
+    ADANIPOWER  Entry:Rs144.65  Ret:+12.00%
+
+[LONG ] 52W Strength
+  Total Signals: 2109
+  15-Day: Avg=-1.29%  Win=37.7%  Best=+20.00%  Worst=-7.00%  N=1736
+  30-Day: Avg=-3.31%  Win=22.4%  Best=+20.00%  Worst=-7.00%  N=1439
+  Top 5 (30d):
+    MAHABANK  Entry:Rs61.35  Ret:+20.00%
+    BHARATFORG  Entry:Rs1443.7  Ret:+20.00%
+    BHARATFORG  Entry:Rs1441.4  Ret:+20.00%
+    BHARATFORG  Entry:Rs1459.1  Ret:+20.00%
+    BHARATFORG  Entry:Rs1437.9  Ret:+20.00%
+============================================================

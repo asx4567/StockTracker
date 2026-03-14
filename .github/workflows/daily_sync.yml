@@ -1,0 +1,33 @@
+name: Daily Stock Sync
+
+on:
+  schedule:
+    - cron: '30 16 * * 1-5' # 22:00 IST (UTC 16:30), Monday–Friday
+  workflow_dispatch: # Manual trigger from Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install yfinance psycopg2-binary python-dotenv pandas numpy
+
+      - name: Run Stock Sync (5-day window)
+        env:
+          SUPABASE_DATABASE_URL: ${{ secrets.SUPABASE_DATABASE_URL }}
+        run: python scripts/sync_stocks.py
+
+      - name: Refresh Materialized Views
+        env:
+          SUPABASE_DATABASE_URL: ${{ secrets.SUPABASE_DATABASE_URL }}
+        run: python scripts/apply_mv.py
