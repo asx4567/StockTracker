@@ -2,7 +2,7 @@ name: Daily Stock Sync
 
 on:
   schedule:
-    - cron: '30 16 * * 1-5' # 22:00 IST (UTC 16:30), Monday–Friday
+    - cron: '30 16 * * *' # 22:00 IST (UTC 16:30), Every Day
   workflow_dispatch: # Manual trigger from Actions tab
 
 jobs:
