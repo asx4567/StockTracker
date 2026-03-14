@@ -2,11 +2,14 @@ import os
 import psycopg2
 from dotenv import load_dotenv
 
-load_dotenv("d:/Projects/MK Stock/.env")
+# Get the directory where the script is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Look for .env in the parent directory of 'scripts'
+load_dotenv(os.path.join(BASE_DIR, "..", ".env"))
 
 def setup_mv():
     db_url = os.getenv("SUPABASE_DATABASE_URL")
-    sql_path = "d:/Projects/MK Stock/scripts/setup_mv.sql"
+    sql_path = os.path.join(BASE_DIR, "setup_mv.sql")
     
     with open(sql_path, "r") as f:
         sql = f.read()
